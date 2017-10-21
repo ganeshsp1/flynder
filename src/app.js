@@ -209,6 +209,8 @@ app.get('/webhook/', (req, res) => {
 
 app.post('/webhook/', (req, res) => {
 console.log('Test');
+var myJSON = JSON.stringify(req.body);
+console.log(myJSON);
     try {
         var data = JSONbig.parse(req.body);
 
